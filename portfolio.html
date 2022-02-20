@@ -9,94 +9,145 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Сеція хедер-->
     <header class="nav">
-        <a class="link-logo link" href="" lang="en">Web<span class="item-logo">Studio</span></a>
+      <div class="container header-flex">  
+        <a class="link-logo link logo-flex" href="" lang="en">Web<span class="item-logo">Studio</span></a>
            <nav>
-               <ul class="nav-list list">
+               <ul class="nav-list list nav-flex">
                    <li class="nav-item"><a class="nav-link link" href="./index.html">Студия</a></li>
                    <li class="nav-item"><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
                    <li class="nav-item"><a class="nav-link link" href="">Контакты</a></li>
                </ul>
            </nav>
     
-           <ul class="contacts-list list">
-               <li><a class="contacts-link link" href="mailo:info@devstudio.com">info@devstudio.com</a></li>
-               <li><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+           <ul class="contacts-list list contacts-flex">
+               <li class="contacts-item"><a class="contacts-link link" href="mailo:info@devstudio.com">info@devstudio.com</a></li>
+               <li class="contacts-item"><a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
            </ul>
+      </div>
        </header>
 
    <main>
        <!--Сеція зображення-->
-<section class="gallery-project">
-    <h1 class="invisible-title">Кнопки фильтров</h1>
-    <ul class="filter-list list">
-        <li class="filter-item"> <button class="filter-btn" type="button">Все</button> </li>
-        <li class="filter-item"> <button class="filter-btn" type="button">Веб-сайты</button></li>
-        <li class="filter-item"> <button class="filter-btn" type="button">Приложения</button></li>
-        <li class="filter-item"> <button class="filter-btn" type="button">Дизайн</button></li>
-        <li class="filter-item"> <button class="filter-btn" type="button">Маркетинг</button></li>
-    </ul>
+<section class="section">
+    <div class="container">
+        <h1 class="invisible-title">Кнопки фильтров</h1>
+        <ul class="filter-list list filter-flex">
+            <li class="filter-item"> <button class="filter-btn" type="button">Все</button> </li>
+            <li class="filter-item"> <button class="filter-btn" type="button">Веб-сайты</button></li>
+            <li class="filter-item"> <button class="filter-btn" type="button">Приложения</button></li>
+            <li class="filter-item"> <button class="filter-btn" type="button">Дизайн</button></li>
+            <li class="filter-item"> <button class="filter-btn" type="button">Маркетинг</button></li>
+        </ul>
 
-    <ul class="gallery-list list">
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/tehnokrak.jpg" alt="ноутбук" width="370" height="294">
-            <h2 class="gallery-title">Технокряк</h2>
-            <p class="gallery-text">Веб-сайт</p> 
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/poster.jpg" alt="игра в баскетбол" width="370" height="294">
-            <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
-            <p class="gallery-text">Дизайн</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/restoran.jpg" alt="логотип ресторана с рыбой" width="370" height="294">
-            <h2 class="gallery-title">Ресторан Seafood</h2>
-            <p class="gallery-text">Приложение</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/projektprime.jpg" alt="наушники" width="370" height="294">
-            <h2 class="gallery-title">Проект Prime</h2>
-            <p class="gallery-text">Маркетинг</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/projektboxes.jpg" alt="две картонные коробки" width="370" height="294">
-            <h2 class="gallery-title">Проект Boxes</h2>
-            <p class="gallery-text">Приложение</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/inspiretion.jpg" alt="монитор" width="370" height="294">
-            <h2 class="gallery-title">Inspiration has no Borders</h2>
-            <p class="gallery-text">Веб-сайт</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/limitededition.jpg" alt="открытая книга" width="370" height="294">
-            <h2 class="gallery-title">Издание Limited Edition</h2>
-            <p class="gallery-text">Дизайн</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/projLAB.jpg" alt="ярлык" width="370" height="294">
-            <h2 class="gallery-title">Проект LAB</h2>
-            <p class="gallery-text">Маркетинг</p>
-        </li>
-        <li class="gallery-item">
-            <img class="gallery-img" src="./images/growingbus.jpg" alt="человек работает на ноутбуке" width="370" height="294">
-            <h2 class="gallery-title">Growing Business</h2>
-            <p class="gallery-text">Приложение</p>
-        </li>
-    </ul>
+        <ul class="gallery-list list gallery-flex">
+            <li class="gallery-item">
+               <a class="link" href=""> 
+                <img class="gallery-img" src="./images/tehnokrak.jpg" alt="ноутбук" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Технокряк</h2>
+                  <p class="gallery-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                 <img class="gallery-img" src="./images/poster.jpg" alt="игра в баскетбол" width="370" height="294">
+                 <div class="border">
+                   <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
+                   <p class="gallery-text">Дизайн</p>
+                 </div>
+                </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/restoran.jpg" alt="логотип ресторана с рыбой" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Ресторан Seafood</h2>
+                  <p class="gallery-text">Приложение</p>
+                 </div>
+                </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/projektprime.jpg" alt="наушники" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Проект Prime</h2>
+                  <p class="gallery-text">Маркетинг</p>
+                </div>
+               </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/projektboxes.jpg" alt="две картонные коробки" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Проект Boxes</h2>
+                  <p class="gallery-text">Приложение</p>
+                </div>
+                </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/inspiretion.jpg" alt="монитор" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Inspiration has no Borders</h2>
+                  <p class="gallery-text">Веб-сайт</p>
+                </div>
+               </a>
+            </li>
+
+             <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/limitededition.jpg" alt="открытая книга" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Издание Limited Edition</h2>
+                  <p class="gallery-text">Дизайн</p>
+               </div>
+               </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/projLAB.jpg" alt="ярлык" width="370" height="294">
+                <div class="border">
+                 <h2 class="gallery-title">Проект LAB</h2>
+                 <p class="gallery-text">Маркетинг</p>
+               </div>
+               </a>
+            </li>
+
+            <li class="gallery-item">
+                <a class="link" href=""> 
+                <img class="gallery-img" src="./images/growingbus.jpg" alt="человек работает на ноутбуке" width="370" height="294">
+                <div class="border">
+                  <h2 class="gallery-title">Growing Business</h2>
+                  <p class="gallery-text">Приложение</p>
+                </div>
+                </a>
+            </li>
+
+        </ul>
 </section>
   
    </main>
 <!-- Секція підвал-->
 <footer class="footer">
+ <div class="container">
+    <a class="link-logo link logo-footer" href="" lang="en" >Web<span class="footer-item-logo">Studio</span> </a>
 
-    <a class="link-logo link" href="" lang="en" >Web<span class="footer-item-logo">Studio</span> </a>
-
-<address class="addres">
+<address class="address">
 
 <ul class="address-list list"> 
     <li class="address-item"><a class="address-link link" href="https://goo.gl/maps/HDMTTbNd2vz2HDnC8">г. Киев, пр-т Леси Украинки, 26 </a></li>
@@ -105,7 +156,7 @@
 </ul>
 
 </address>
-
+</div>
 </footer>
     
 </body>
